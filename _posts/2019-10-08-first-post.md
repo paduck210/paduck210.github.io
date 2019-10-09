@@ -18,7 +18,7 @@ There are three ways you can define an array of strings without typing quotes
 
 2. Experiments
 
-```
+```ruby
 def get_rid_of_surrounding_whitespaces(a_string)
   # TODO: return a copy of the string with leading and trailing whitespaces removed
   # example: get_rid_of_surrounding_whitespaces("  hey yo  ") => "hey yo"
