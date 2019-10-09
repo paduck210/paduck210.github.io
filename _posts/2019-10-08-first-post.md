@@ -93,7 +93,7 @@ Range like (1..100)
 Parameter > inside of Method 
 Object > assign to the Parameter 
 
-```
+```ruby
 require 'date'
 
 def age_in_days(day, month, year)
@@ -102,7 +102,7 @@ def age_in_days(day, month, year)
 end
 ```
 
-```
+```ruby
 require_relative './age_in_days'
 
 ### Talking with the user ###
@@ -136,7 +136,7 @@ Use 'Until a == b' means if it is True do Return / if not, go to next line
 
 Method 
 
-```
+```ruby
 def coach_answer(your_message)
   # TODO: return coach answer to your_message
   if your_message == "go"
@@ -159,9 +159,8 @@ def coach_answer_enhanced(your_message)
 end
 ```
 
-Use 
-
-```
+Use
+```ruby
 require_relative "coach_answer"
 # TODO: Implement the program that makes you discuss with your coach from the terminal.
 
