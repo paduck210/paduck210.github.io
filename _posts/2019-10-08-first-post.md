@@ -9,14 +9,16 @@ categories: studying
 
 There are three ways you can define an array of strings without typing quotes
 
-'''%w[Hey Harry Poter] #=> ["Hey", "Harry", "Poter"]
+```
+%w[Hey Harry Poter] #=> ["Hey", "Harry", "Poter"]
 %w(Hey Harry Poter) #=> ["Hey", "Harry", "Poter"]
-%w{Hey Harry Poter} #=> ["Hey", "Harry", "Poter"]'''
+%w{Hey Harry Poter} #=> ["Hey", "Harry", "Poter"]
+```
 
 
 2. Experiments
 
-'''
+```
 def get_rid_of_surrounding_whitespaces(a_string)
   # TODO: return a copy of the string with leading and trailing whitespaces removed
   # example: get_rid_of_surrounding_whitespaces("  hey yo  ") => "hey yo"
@@ -64,12 +66,12 @@ def ascending_order(an_array)
   # example: ascending_order([7, 3, 1, 6, 9]) => [1, 3, 6, 7, 9]
   return an_array.sort
 end
-'''
+```
 
 
 
 3. 7 most used ruby built-in objects?
-'''
+```
 String like "Hello World"
 
 Integer like 12
@@ -82,7 +84,8 @@ TrueClass like true
 
 FalseClass like false
 
-Range like (1..100)'''
+Range like (1..100)
+```
 
 
 4. Method <-> Use 
@@ -90,16 +93,16 @@ Range like (1..100)'''
 Parameter > inside of Method 
 Object > assign to the Parameter 
 
-'''
+```
 require 'date'
 
 def age_in_days(day, month, year)
   # TODO: return the age expressed in days given the day, month, and year of birth
   (Date.today - Date.new(year, month, day)).to_i
 end
-'''
+```
 
-'''
+```
 require_relative './age_in_days'
 
 ### Talking with the user ###
@@ -120,7 +123,7 @@ calculated_age = age_in_days(birth_day, birth_month, birth_year)
 
 # Finally, print user's age in days:
 puts "You are #{calculated_age} days old... phew!"
-'''
+```
 
 
 
@@ -133,7 +136,7 @@ Use 'Until a == b' means if it is True do Return / if not, go to next line
 
 Method 
 
-'''
+```
 def coach_answer(your_message)
   # TODO: return coach answer to your_message
   if your_message == "go"
@@ -154,11 +157,11 @@ def coach_answer_enhanced(your_message)
     return "I can feel your motivation!"
   end
 end
-'''
+```
 
 Use 
 
-'''
+```
 require_relative "coach_answer"
 # TODO: Implement the program that makes you discuss with your coach from the terminal.
 
@@ -181,7 +184,7 @@ until final_answer == ""
     puts final_answer
   end
 end
-'''
+```
 
 
 6. Learn Debugging
@@ -197,11 +200,13 @@ Be specific
 2) Focus on the bug 
 Just test the Go
 Test line by line / Input new puts/print function to test
-  # puts my_question #go
+```
+# puts my_question #go
   # puts my_question.upcase #GO
   # puts my_question == "GO" #false
   # if my_question == my_question.upcase
- 
+ ```
+
 3) Find a way
 go => False
 GO => True
@@ -211,6 +216,8 @@ if a == b
 > true > run next line
 > false > move to next condition
 
+```
 if my_question == my_question.upcase
+```
 my_question > upcase? > True
 my_question > downcase > False
