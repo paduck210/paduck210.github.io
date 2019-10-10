@@ -1,6 +1,6 @@
 ---
-title: "[2/97] Ruby - Basic"
-date: 2017-10-07 
+title: "[2/45] Ruby - Basic"
+date: 2017-10-08
 categories: studying
 ---
 
