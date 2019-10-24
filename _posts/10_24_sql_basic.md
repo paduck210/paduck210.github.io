@@ -60,11 +60,10 @@ WHERE speciality = 'Cardiac Surgery'
 SELECT COUNT(*) AS count_number, speciality FROM doctors
 GROUP BY speciality  ---- Grouping
 ORDER BY count_number DESC
-
+```
 
 
 2. Join 2 Tables 
-
 
 ```
 -- Give all the inhabitant from Paris && only Adult
@@ -84,14 +83,14 @@ AND i.age >= 18
 
 3. Join 3 Tables
 
-'''
+```
 SELECT artists.name, genres.name, count(*) FROM tracks
 JOIN genres ON genres.id = tracks.genre_id
 JOIN albums ON albums.id = tracks.album_id
 JOIN artists ON artists.id = albums.artist_id
 WHERE genres.name = "Rock" 
 GROUP BY artists.name
-'''
+```
 
 
 4. Advanced 
