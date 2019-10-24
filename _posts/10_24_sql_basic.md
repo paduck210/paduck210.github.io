@@ -97,7 +97,6 @@ GROUP BY artists.name
 
 ```
 def top_five_artists(db, genre_name)
-  # TODO: return list of top 5 artists with the most songs for a given genre.
   query = <<-SQL
   SELECT artists.name, count(*) FROM tracks
   JOIN genres ON genres.id = tracks.genre_id
