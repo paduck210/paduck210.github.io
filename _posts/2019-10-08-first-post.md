@@ -1,6 +1,6 @@
 ---
-title: "[2/45] Ruby - Basic"
-date: 2017-10-08
+title: "Ruby - Basic"
+date: 2019-10-08
 categories: studying
 ---
 
@@ -18,52 +18,36 @@ There are three ways you can define an array of strings without typing quotes
 
 2. Experiments
 
-```ruby
+```
 def get_rid_of_surrounding_whitespaces(a_string)
-  # TODO: return a copy of the string with leading and trailing whitespaces removed
-  # example: get_rid_of_surrounding_whitespaces("  hey yo  ") => "hey yo"
   a_string.strip
 end
 
 def belongs_to?(a_string, a_word)
-  # TODO: return true if a_string contains a_word
-  # example: belongs_to?("hey jude", "jude") => true
   a_string.include? a_word
 end
 
 def replace(initial_string, old_letter, new_letter)
-  # TODO: return a copy of the string with the new letter replacing the old one
-  # example: replace("casanova", "a", "o") => "cosonovo"
   return initial_string.gsub(old_letter, new_letter)
 end
 
 def exactly_divide(an_integer, a_divider)
-  # TODO: return division of an_integer by a_divider (computing the floating division, NOT the euclidean one)
-  # example: exactly_divide(13, 4) => 3.25
   return an_integer / a_divider.to_f
 end
 
 def divisible_by_two?(an_integer)
-  # TODO: return true if an_integer is divisible by 2
-  # example: divisible_by_two?(6) => true
   return an_integer.even?
 end
 
 def random_subset(an_array, sample_size)
-  # TODO: return a random subset of an_array with size sample_size
-  # example: random_subset(('a'..'z').to_a, 4) => ["u", "q", "l", "t"]
-  return an_array.sample(sample_size)
+  return an_array.sample(sample_size) # return array
 end
 
 def randomize(an_array)
-  # TODO: return a randomized copy of an_array
-  # example: randomize([1, 2, 3, 4]) => [2, 1, 4, 3]
   return an_array.shuffle
 end
 
 def ascending_order(an_array)
-  # TODO: return a copy of an_array with elements in ascending order
-  # example: ascending_order([7, 3, 1, 6, 9]) => [1, 3, 6, 7, 9]
   return an_array.sort
 end
 ```
@@ -189,16 +173,17 @@ end
 6. Learn Debugging
 
 1) Which condition the bug occurs? 
+```
 Be specific
   Downcase = go > quit (x)
   Downcase = ? > "" (o)
   Downcase = ?=x > "" (o)
   upcase = GO > quit (o)
   upcase = ANYTHING > "I can feel your motivation!" (o)
+ ```
   
 2) Focus on the bug 
-Just test the Go
-Test line by line / Input new puts/print function to test
+Just test the Go, Test line by line / Input new puts/print function to test
 ```
 # puts my_question #go
   # puts my_question.upcase #GO
@@ -207,16 +192,19 @@ Test line by line / Input new puts/print function to test
  ```
 
 3) Find a way
+```
 go => False
 GO => True
+```
 
 4) Create the code
-if a == b
+
+```if a == b
 > true > run next line
 > false > move to next condition
-
+```
 ```
 if my_question == my_question.upcase
-```
 my_question > upcase? > True
 my_question > downcase > False
+```
