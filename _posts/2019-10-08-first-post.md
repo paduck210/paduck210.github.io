@@ -55,19 +55,14 @@ end
 
 
 3. 7 most used ruby built-in objects?
+
 ```
 String like "Hello World"
-
 Integer like 12
-
 Float like 3.14
-
 Array like ["Hello World", 12, 3.14]
-
 TrueClass like true
-
 FalseClass like false
-
 Range like (1..100)
 ```
 
@@ -202,8 +197,6 @@ GO => True
 ```if a == b
 > true > run next line
 > false > move to next condition
-```
-```
 if my_question == my_question.upcase
 my_question > upcase? > True
 my_question > downcase > False
