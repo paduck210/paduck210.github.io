@@ -295,3 +295,8 @@ defaults:
       
       
 remote_theme : mmistakes/minimal-mistakes
+
+
+# Conversion markdown: redcarpet 
+highlighter: pygments 
+redcarpet: extensions: ["no_intra_emphasis", "fenced_code_blocks", "autolink", "strikethrough", "superscript"]
