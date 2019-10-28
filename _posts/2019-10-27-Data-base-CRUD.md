@@ -1,6 +1,6 @@
 ---
-title: "Ruby - Basic"
-date: 2019-10-08
+title: "DB BASE - CRUE"
+date: 2019-10-27
 categories: studying
 ---
 
