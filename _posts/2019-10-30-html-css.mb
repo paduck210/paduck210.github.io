@@ -1,0 +1,244 @@
+---
+title: "Ruby - Basic"
+date: 2019-10-30
+categories: studying
+---
+
+1. Basic
+- div is important, everything is in website contain of blocks.
+- button is in line tag, so if you wnant to make it as a block tag, put `display: block;` in CSS
+- Priority : id > class > general tag
+- Head of HTML : This is SEO part, and also be shown in Facebook 
+```
+  <title>Jung is Amazing</title>
+    <meta name="description" content="Learning Programming now, this page gonna be
+    changed amazingly in few weeks, you will see!">
+   </title>
+```
+- Naming of cass tag is important. Different from Ruby, it should inform purpose of design (ex. .btn-blue (o), .btn-link (x)
+
+
+2. HTML (sample) 
+```
+<html>
+  <head>
+
+    <link rel="stylesheet" href="style.css">
+
+    <title>Jung is Amazing</title>
+    <meta name="description" content="Learning Programming now, this page gonna be
+    changed amazingly in few weeks, you will see!">
+    <meta charset="utf-8">
+    <script src="https://kit.fontawesome.com/75c591787f.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css?family=Fira+Code|Roboto|Staatliches&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="card-white" id= "card-profile">
+        <h1>Jung Yu | Genius </h1>
+        <h2>Marketer + Developer</h2>
+        <div id="profile-img"></div>
+        <p>
+          <strong>A</strong>wesome, <strong>B</strong>rave,
+          <strong>C</strong>reatvie, <strong>D</strong>elight,
+          <strong>E</strong>njoy, I need some text to test this paragraph is working well or not, what is good for dinner tonight? I bought some stuff yesterday so maybe some korean foods might be good choice,
+        </p>
+        <a href="https://paduck210.github.io/" class="button">Read more</a>
+      </div>
+
+      <div class="card-white">
+        <h2>I am</h2>
+        <p>Korean🇰🇷, who is living in <strong>Montreal</strong>🇨🇦</p>
+      </div>
+
+      <div class="card-white">
+        <h2>I like</h2>
+        <p>coding👩‍💻, nowday I love do <strong>Ruby</strong>, it's so challengable</p>
+      </div>
+
+      <div class="card-white">
+        <h2>I want</h2>
+        <p>Work as a developer in <strong>Strartup</strong>👍 as a fullstack developer</p>
+      </div>
+
+      <div class="card-white">
+        <h2>Link with me!</h2>
+        <ul class= "list-inline">
+          <li class="social-btn">
+            <a href="https://www.linkedin.com/in/hyunjungyu1408/">
+              <i class="fab fa-linkedin"></i>
+            </a>
+          <li class="social-btn">
+            <a href="https://github.com/paduck210/paduck210.github.io">
+              <i class="fab fa-github-square"></i>
+            </a>
+          </li>
+          <li class="social-btn">
+            <a href="https://www.facebook.com/hyunjung.yu">
+              <i class="fab fa-facebook-square"></i>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+
+
+
+
+  </body>
+</html>
+
+```
+
+3. CSS (sample) 
+```
+/*font-family: 'Fira Code', monospace;
+font-family: 'Roboto', sans-serif;    #simple
+font-family: 'Staatliches', cursive;  #strong */
+
+/*Back_color:  #fcf9ea;
+  Title_Text_color : #49beb7;
+  Basic_Text_color : #3c4245;
+  Button_color : #ff8a5c
+*/
+
+body {
+  background-color: #fcf9ea;
+  font-family: 'Roboto', sans-serif;
+  color :#3c4245;
+}
+
+img {
+  margin-top: 20px;
+}
+
+h1, h2 {
+  font-family: 'Staatliches', cursive;
+  color :#49beb7;
+  font-size :50px;
+  margin: 0%;
+}
+
+h2 {
+  font-size :30px;
+}
+
+ul {
+  list-style-type: none;
+}
+
+p {
+  padding: 15px;
+  font-size: 17;
+}
+
+
+.button {
+  width: 100px;
+  background-color: #ff8a5c;
+  color: white;
+  padding: 10px 50px;
+  margin: auto;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 5px;
+  transition-duration: 0.7s;
+  cursor: pointer;
+  display: block;
+}
+
+.button:hover {
+  background-color: #49beb7;
+  color: white;
+}
+
+.social-btn a {
+  font-size : 40px;
+  margin :10px;
+  color: #ff8a5c;
+  text-align: center;
+}
+
+.social-btn:hover {
+  background-color: white;
+}
+
+.list-inline {
+  list-style: none;
+  padding: 0;
+}
+
+.list-inline li {
+  display: inline-block;
+}
+
+.card-white {
+  padding: 30px 70px;
+  margin: 30 auto 30 auto;
+  width: 50%;
+  box-shadow: 0px 10px 30px rgba(0,0,0,0.1);
+  background-color: white;
+  text-align: center;
+  border-radius :5px;
+}
+
+/*#card-profile {
+  height: 500px;
+  width: 50%;
+
+}*/
+
+/*<div id="profile-img"></div>*/
+
+#profile-img {
+  object-fit: cover;
+  background-image: url('images/profile.jpg');
+  border-radius: 50%;
+  width :200px;
+  height :200px;
+  margin : 20 auto;
+  background-size: 100%;
+  transition-duration: 0.3s;
+  cursor: pointer;
+}
+
+#profile-img:hover {
+  background-image: url('images/paduck.jpg');
+  border-radius: 50%;
+  width :200px;
+  height :200px;
+}
+
+
+.container {
+  margin: auto;
+}
+
+p strong {
+  color: #49beb7;
+}
+
+@media (max-width: 960px) {
+  /* For a screen < 960px, this CSS will be read */
+  .container {
+    width: 700px;
+
+  }
+}
+@media (max-width: 720px) {
+  /* For a screen < 720px, this CSS will be read */
+  .container {
+    width: 500px;
+  }
+}
+@media (max-width: 540px) {
+  /* For a screen < 540px, this CSS will be read */
+  .container {
+    width: 300px;
+  }
+}
+
+```
