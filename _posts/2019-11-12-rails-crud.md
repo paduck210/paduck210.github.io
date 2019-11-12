@@ -1,3 +1,8 @@
+---
+title: "Rails CRUD"
+date: 2019-11-12
+categories: studying
+---
 
 
 1. What rails do for me?
