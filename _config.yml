@@ -296,9 +296,3 @@ defaults:
       
 remote_theme : mmistakes/minimal-mistakes
 
-
-markdown: redcarpet
-redcarpet:
-  extensions: ["no_intra_emphasis", "tables", "autolink", "fenced_code_blocks", "strikethrough"]
-
-
