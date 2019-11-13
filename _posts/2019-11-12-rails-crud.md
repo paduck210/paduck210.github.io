@@ -7,13 +7,14 @@ categories: studying
 
 0. form_for
 
-If you do form for, instead of httml source, 
-techinally it works same as like HTML source
-but it do connect to next page, and set method stuff for us
-
-If `form_for(@resto)`
-has id X ===> next: create / method: push
-has id O ===> next: update / method: patch
+If you do form for, instead of httml source, <br>
+techinally it works same as like HTML source<br>
+but it do connect to next page, and set method stuff for us<br>
+<br>
+If `form_for(@resto)`<br>
+has id X ===> next: create / method: push<br>
+has id O ===> next: update / method: patch<br>
+<br>
 
 ```ruby
 <!-- app/views/restaurants/_form.html.erb -->
@@ -25,8 +26,8 @@ has id O ===> next: update / method: patch
   <%= f.submit %>
 <% end %>
 ```
-
-short cut for form_for for same pages
+<br>
+short cut for form_for for same pages<br>
 ```ruby
 <!-- app/views/restaurants/new.html.erb -->
 <%= render 'form' %>
@@ -38,14 +39,14 @@ short cut for form_for for same pages
 ```
 
 
-1. What rails do for me?
+1. What rails do for me? <br>
 
-1) rails new APP_NAME
-2) rails generate model Restaurant name:string address:strinng
-3) rails db:migrate
-4) Edit details of model
-5) rails db:migrate
-6) rails generate controller Restarant method_name method_name method_name
+1) rails new APP_NAME <br>
+2) rails generate model Restaurant name:string address:strinng <br>
+3) rails db:migrate <br>
+4) Edit details of model <br>
+5) rails db:migrate <br>
+6) rails generate controller Restarant method_name method_name method_name <br>
 
 
 ```ruby
@@ -58,19 +59,16 @@ rails db:reset    # Drops database + replays all migration + runs seed
 ```
 
 
-3.
-If I need edit Migration 
-put this line in Terminal
+3.If I need edit Migration <br>
+put this line in Terminal <br>
 
 ```ruby
 rails generate migration AddAddressToRestaurants address:string
 ```
 
 
-4.
-About CRUD 
-
-Make it 7 CRUD routes for me
+4. About CRUD <br>
+Make it 7 CRUD routes for me <br>
 
 ```ruby
 Rails.application.routes.draw do
@@ -78,7 +76,7 @@ Rails.application.routes.draw do
 end
 ```
 
-In case of only need specific pages
+In case of only need specific pages<br>
 ```ruby
 Rails.application.routes.draw do
   resources :restaurants, only: [:index, :show]
@@ -86,11 +84,10 @@ end
 ```
 
 
-5. UPDATE 
-
-Because any user can access or edit data form in HTML, make 'params' locked.
-Make the `params.require(:model).permit(:method)` on the last line, 
-and mark it as to private
+5. UPDATE <br>
+Because any user can access or edit data form in HTML, make 'params' locked.<br>
+Make the `params.require(:model).permit(:method)` on the last line, <br>
+and mark it as to private<br>
 
 ```ruby
 class RestaurantsController < ApplicationController
@@ -111,12 +108,12 @@ end
 ```
 
 
-6. before action filter
+6. before action filter<br>
 
-When we need exact same line in Method, 
-using **before action** like below.
-
-In this case
+When we need exact same line in Method, <br>
+using **before action** like below.<br>
+<br>
+In this case<br>
 ```ruby
 # app/controllers/restaurants_controller.rb
 class RestaurantsController < ApplicationController
@@ -138,9 +135,9 @@ class RestaurantsController < ApplicationController
   end
 end
 ```
-
-1) Make set_restaurant Method in Private
-2) Add it right after the class line
+<br>
+1) Make set_restaurant Method in Private <br>
+2) Add it right after the class line <br>
 
 ```ruby
 # app/controllers/restaurants_controller.rb
@@ -151,7 +148,7 @@ class RestaurantsController < ApplicationController
     # ...
   end
   def edit
-    # ...
+    # ...  
   end
   def update
     # ...
@@ -283,12 +280,11 @@ end
 
 
 4. HTML_index
+
 ```ruby
+
 <h1>MY TASK</h1>
-
-
 <div class="card">
-
   <ul>
     <% @tasks.each do |task| %>
       <li>
@@ -298,10 +294,6 @@ end
       </li>
     <% end %>
   </ul>
-
-
 </div>
-
 <%= link_to "➕", new_task_path %>
-
 ```
