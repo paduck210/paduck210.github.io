@@ -71,9 +71,6 @@ end
 4. Add more routes with ID = member
 
 ```ruby
-GET /restaurants/:id/chef 
-
-# config/routes.rb
 Rails.application.routes.draw do
   resources :restaurants do
     member do                          # member => restaurant id in URL
