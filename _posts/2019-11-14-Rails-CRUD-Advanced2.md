@@ -1,4 +1,3 @@
-
 ---
 title: "Ruby - CRUD-Advanced2"
 date: 2019-11-17
