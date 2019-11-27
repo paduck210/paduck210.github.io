@@ -1,0 +1,30 @@
+---
+title: "Rails - Seed"
+date: 2019-11-27
+categories: studying
+---
+
+1. Get API data > Save it as a JSON file
+
+```ruby
+# lib/tasks/user.rake
+
+namespace :user do
+  desc "Enriching all users with Clearbit (async)"
+  task :get_apidata => :environment do
+	api_data =[{something}]
+	File.write("data,json", JSON.generate(api_data))
+  end
+end
+
+# How to run this code command line 
+# rails user:get_apidata
+```
+
+
+2. Using the JSON file in the seed
+
+```ruby
+data = JSON.parse(File.open(data.json).read)
+
+```
