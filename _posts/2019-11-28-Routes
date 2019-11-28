@@ -1,0 +1,5 @@
+Filter on Routes with name
+
+```ruby
+rails routes | grep restaurant 
+```
