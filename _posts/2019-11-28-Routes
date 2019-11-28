@@ -3,3 +3,9 @@ Filter on Routes with name
 ```ruby
 rails routes | grep restaurant 
 ```
+
+After editing some codes, should do 
+
+```ruby
+reload!
+```
