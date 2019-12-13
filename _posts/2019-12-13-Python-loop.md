@@ -1,4 +1,4 @@
-<h3>Basic Loop with text<h3>
+<h3>Basic Loop with text</h3>
 
 ```python
 actors = ["harry", "brad", "emma"]
@@ -14,7 +14,7 @@ for actor in actors:
 
 
 
-<h3>Basic Loop with number<h3>
+<h3>Basic Loop with number</h3>
 
 ```python
 for value in range(1,10):
@@ -26,7 +26,7 @@ print(numbers)
 ```
 
 
-<h3>Basic Loop with List<h3>
+<h3>Basic Loop with List</h3>
 
 ```python
 list = []
