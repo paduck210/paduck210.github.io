@@ -70,3 +70,16 @@ print(food) # ['Xianmi', 'bibimbap', 'pizza', 'pasta']
 # len
 print(len(food)) #4
 ```
+
+
+<h3>Copy list</h3>
+
+```python 
+names = ["tom", "paul", "mike", "jay", "johny", "lyn"]
+new_names = names[:]
+print(names)
+```
+
+You might think `new_names = names` is also working<br>
+However, if you add new element to `new_names` <br>
+original `names` would be changed as well
