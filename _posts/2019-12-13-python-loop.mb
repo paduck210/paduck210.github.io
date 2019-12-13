@@ -69,5 +69,20 @@ print(new_list[-2:]) # [729, 1000]
 ```
 
 
+<h3>Looping with Slicing List</h3>
 
+- use a index/value with list 
+- slicing list
+
+```python
+names = ["tom", "paul", "mike", "jay", "johny", "lyn"]
+print("This are top 3 students in the class")
+for i, name in enumerate(names[:3]):
+  print(f"Number{i+1}: {name.title()}")
+
+# This are top 3 students in the class
+# Number1: Tom
+# Number2: Paul
+# Number3: Mike
+```
 
