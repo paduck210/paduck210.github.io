@@ -4,7 +4,7 @@
 actors = ["harry", "brad", "emma"]
 
 for actor in actors:
-  print(f"Actor name is \"{actor.title()}\" ")
+  print(f"Actor name is {actor.title()} ")
   print(f"I can' wait to see {actor.title()}'s movie again ")
 
 # Actor name is "Harry"
