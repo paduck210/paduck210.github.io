@@ -2,7 +2,7 @@
 
 string function
 
-python```
+```python
 obj = "python"
 before = "thon"
 after = "zzzz"
