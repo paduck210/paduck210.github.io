@@ -1,5 +1,5 @@
 ---
-title: "Python - basic"
+title: "Python - "
 date: 2019-12-13
 categories: Python
 ---
