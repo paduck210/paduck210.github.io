@@ -9,7 +9,7 @@ categories: studying
 
 There are three ways you can define an array of strings without typing quotes
 
-```
+```ruby
 %w[Hey Harry Poter] #=> ["Hey", "Harry", "Poter"]
 %w(Hey Harry Poter) #=> ["Hey", "Harry", "Poter"]
 %w{Hey Harry Poter} #=> ["Hey", "Harry", "Poter"]
@@ -67,10 +67,10 @@ Range like (1..100)
 ```
 
 
-4. Method <-> Use 
+4. Method <-> Use
 
-Parameter > inside of Method 
-Object > assign to the Parameter 
+Parameter > inside of Method
+Object > assign to the Parameter
 
 ```ruby
 require 'date'
@@ -108,12 +108,12 @@ puts "You are #{calculated_age} days old... phew!"
 
 5. Complicated
 
-Understand 
-condition in Method 
+Understand
+condition in Method
 Use 'Until a == b' means if it is True do Return / if not, go to next line
 
 
-Method 
+Method
 
 ```ruby
 def coach_answer(your_message)
@@ -167,7 +167,7 @@ end
 
 6. Learn Debugging
 
-1) Which condition the bug occurs? 
+1) Which condition the bug occurs?
 ```
 Be specific
   Downcase = go > quit (x)
@@ -176,8 +176,8 @@ Be specific
   upcase = GO > quit (o)
   upcase = ANYTHING > "I can feel your motivation!" (o)
  ```
-  
-2) Focus on the bug 
+
+2) Focus on the bug
 Just test the Go, Test line by line / Input new puts/print function to test
 ```
 # puts my_question #go
