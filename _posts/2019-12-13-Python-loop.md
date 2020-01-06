@@ -1,3 +1,10 @@
+---
+title: "Python - basic"
+date: 2019-12-13
+categories: Python
+---
+
+
 <h3>Basic Loop with text</h3>
 
 ```python
@@ -15,6 +22,7 @@ for actor in actors:
 
 
 <h3>Basic Loop with number</h3>
+
 
 ```python
 for value in range(1,10):
@@ -73,7 +81,7 @@ print(new_list[-2:]) # [729, 1000]
 
 <h3>Looping with Slicing List</h3>
 
-- use a index/value with list 
+- use a index/value with list
 - slicing list
 
 ```python

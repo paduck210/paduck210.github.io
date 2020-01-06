@@ -1,4 +1,11 @@
-1. Simple 
+---
+title: "Python - basic"
+date: 2019-12-13
+categories: Python
+---
+
+1. Simple
+
 
 ```python
 >>> print [i for i in range(10)]

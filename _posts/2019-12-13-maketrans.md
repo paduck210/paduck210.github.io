@@ -1,3 +1,10 @@
+---
+title: "Python - basic"
+date: 2019-12-13
+categories: Python
+---
+
+
 <h3>Maketrans</h3>
 
 string function

@@ -1,7 +1,13 @@
+---
+title: "Python - basic"
+date: 2019-12-13
+categories: Python
+---
+
 <h3>CRUD of List of Python</h3>
 
-Add 
-- append 
+Add
+- append
 - Insert
 
 Delete
@@ -18,7 +24,7 @@ print(food)
 
 # Add on the list
 
-# append 
+# append
 new_food = "fired rice"
 food.append(new_food)
 print(food)
@@ -74,7 +80,7 @@ print(len(food)) #4
 
 <h3>Copy list</h3>
 
-```python 
+```python
 names = ["tom", "paul", "mike", "jay", "johny", "lyn"]
 new_names = names[:]
 print(names)

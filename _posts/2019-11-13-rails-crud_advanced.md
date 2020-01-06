@@ -1,11 +1,11 @@
 ---
 title: "Rails CRUD Advanced"
 date: 2019-11-13
-categories: studying
+categories: Lewagon
 ---
 
 
-1. Routes 
+1. Routes
 
 To create CRUD routes, use resources
 
@@ -17,7 +17,7 @@ end
 
 ```ruby
 Rails.application.routes.draw do
-    resources :flats, only: [:new, :create] 
+    resources :flats, only: [:new, :create]
 end
 ```
 
@@ -29,7 +29,7 @@ If retaurnt << reveiws?
 ```ruby
 Rails.application.routes.draw do
   resources :restaurants do
-    resources :reviews, only: [:index, :new, :create] # should be related to restaurant ID 
+    resources :reviews, only: [:index, :new, :create] # should be related to restaurant ID
   end
   resources: reviews, only: [:show, :create, :update, :destroy] # after having own review ID
 end
@@ -46,8 +46,9 @@ rails g model Restaurant name rating:integer # default is string
 rails g model Review name rating:integer # default is string
 ```
 
-2) Model
+2) Model<br>
 Should put has_many to Mother Model
+
 
 ```ruby
 class Restaurant < ApplicationRecord
@@ -58,6 +59,7 @@ class Restaurant < ApplicationRecord
   validates :category, presence: true, inclusion: { in: ["chinese", "italian", "japanese", "french", "belgian"] }
 end
 ```
+
 
 ```ruby
 class Review < ApplicationRecord
@@ -131,5 +133,3 @@ Case of create/destroy/edit/new (restaurants/12/reviews)
   <%= f.submit "add review", class: "btn btn-primary" %>
 <% end %>
 ```
-
-

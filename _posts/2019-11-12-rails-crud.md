@@ -1,7 +1,7 @@
 ---
 title: "Rails CRUD"
 date: 2019-11-12
-categories: studying
+categories: Lewagon
 ---
 
 
@@ -26,8 +26,10 @@ has id O ===> next: update / method: patch<br>
   <%= f.submit %>
 <% end %>
 ```
+
 <br>
 short cut for form_for for same pages<br>
+
 ```ruby
 <!-- app/views/restaurants/new.html.erb -->
 <%= render 'form' %>
@@ -197,7 +199,7 @@ end
 
 2. Controller
 
-```ruby
+```Ruby
 class TasksController < ApplicationController
 
   before_action :find_id, only: [:show, :edit, :update, :destroy]

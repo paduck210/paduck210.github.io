@@ -1,12 +1,12 @@
 ---
 title: "DB BASE - CRUE"
 date: 2019-10-27
-categories: studying
+categories: Lewagon
 ---
 
 1. CRUE
 
-```
+```ruby
 # CREATE
 INSERT INTO doctors (name, age, speciality) VALUES ('Dr.Jung','30','Generalist')
 
@@ -20,11 +20,11 @@ UPDATE doctors SET speciality = 'Dentist', age = 32 WHERE id = 3
 DELETE FROM doctors WHERE id = 3
 ```
 
-2. SET ID is DATA BASE responsibility. 
+2. SET ID is DATA BASE responsibility.
 
 After you INSERT new data to DB base, put DB.last_insert_row_id after the line.
 
-```
+```ruby
 # Save in Perminant Memory
 doctor = Doctor.new(name: "Jung", age: 42)
 doctor.id
@@ -34,12 +34,12 @@ DB.execute("INSERT INTO doctors (name, age, speciality) VALUES ('Dr.Jung','30','
 DB.last_insert_row_id
 ```
 
-3. DB excute will return you Array of Array. 
+3. DB excute will return you Array of Array.
 
 If you want to get rid of the arrays, use .flatten method.
-However, it will erases all the array no matter how many arrays it has. 
+However, it will erases all the array no matter how many arrays it has.
 So you need use it wisely. Keep debugging. Check the return value of line.
-```
+```ruby
 # Array of Array
 doctors = DB.execute("SELECT name, age FROM doctors")
 # => [
@@ -50,11 +50,11 @@ doctors = DB.execute("SELECT name, age FROM doctors")
 
 4. Array of HASH
 
-I can set DB return as HASH. It's better than array of array can find key value easily and correctly. 
+I can set DB return as HASH. It's better than array of array can find key value easily and correctly.
 Key will return as a String, not a symbol
 
 
-```
+```ruby
 DB.results_as_hash = true
 doctors = DB.execute("SELECT name, age FROM doctors")
 # => [
@@ -71,7 +71,7 @@ puts "Doctor #{name} is #{age} years old"
 
 5. Reference
 
-```
+```ruby
 class Post
   attr_reader :id
   attr_accessor :title, :url, :votes
@@ -121,6 +121,4 @@ class Post
   end
 
 end
-
-
 ```

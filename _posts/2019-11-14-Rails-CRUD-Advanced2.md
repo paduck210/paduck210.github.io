@@ -1,7 +1,7 @@
 ---
 title: "Ruby - CRUD-Advanced2"
 date: 2019-11-17
-categories: studying
+categories: Lewagon
 ---
 
 1. link to with Bootstrap
@@ -17,7 +17,7 @@ categories: studying
 ```
 
 
-2. One to many relationship 
+2. One to many relationship
 
 Schema
 
@@ -64,7 +64,7 @@ end
 ```
 
 
-4. Child - Model 
+4. Child - Model
 
 ```ruby
 class Dose < ApplicationRecord
@@ -124,4 +124,3 @@ end
   <%= d.submit %>
 <% end %>
 ```
-

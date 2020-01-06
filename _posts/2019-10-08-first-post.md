@@ -1,7 +1,7 @@
 ---
 title: "Ruby - Basic"
 date: 2019-10-08
-categories: studying
+categories: Lewagon
 ---
 
 
@@ -18,7 +18,7 @@ There are three ways you can define an array of strings without typing quotes
 
 2. Experiments
 
-```
+```ruby
 def get_rid_of_surrounding_whitespaces(a_string)
   a_string.strip
 end
@@ -56,7 +56,7 @@ end
 
 3. 7 most used ruby built-in objects?
 
-```
+```ruby
 String like "Hello World"
 Integer like 12
 Float like 3.14
@@ -168,7 +168,7 @@ end
 6. Learn Debugging
 
 1) Which condition the bug occurs?
-```
+```ruby
 Be specific
   Downcase = go > quit (x)
   Downcase = ? > "" (o)
@@ -179,22 +179,23 @@ Be specific
 
 2) Focus on the bug
 Just test the Go, Test line by line / Input new puts/print function to test
-```
-# puts my_question #go
-  # puts my_question.upcase #GO
-  # puts my_question == "GO" #false
-  # if my_question == my_question.upcase
+```ruby
+puts my_question #go
+  puts my_question.upcase #GO
+  puts my_question == "GO" #false
+  if my_question == my_question.upcase
  ```
 
 3) Find a way
-```
+```ruby
 go => False
 GO => True
 ```
 
 4) Create the code
 
-```if a == b
+```ruby
+if a == b
 > true > run next line
 > false > move to next condition
 if my_question == my_question.upcase

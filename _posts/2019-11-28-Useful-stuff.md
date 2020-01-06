@@ -1,3 +1,9 @@
+---
+title: "Rails - shortcut"
+date: 2019-11-28
+categories: Lewagon
+---
+
 ```ruby
 rails g mailer UserMailer welcome
 ```
@@ -6,8 +12,8 @@ rails g mailer UserMailer welcome
 #app/mailers/application_mailer.rb
 
 class ApplicationMailer < ActionMailer::Base
-  defalt 
-   
+  defalt
+
 end
 ```
 
