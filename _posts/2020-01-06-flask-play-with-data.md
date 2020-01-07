@@ -35,7 +35,7 @@ flask shell
 
 
 >>> for u in users:
-...     print(u.id, u.username, u.email)
+...     print(u.id, u.username, u.emadil)
 ...
 1 john paduck@gamil.com
 2 bing p@gmail.com
