@@ -1,5 +1,5 @@
 ---
-title: "Flask - Play with data"
+title: "Flask - data shell"
 date: 2020-01-06
 categories: Flask
 ---

@@ -1,5 +1,5 @@
 ---
-title: "Flask - data"
+title: "Flask - Model, Migration"
 date: 2020-01-06
 categories: Flask
 ---
@@ -67,7 +67,7 @@ how to test with Python cell
 ✗ flask db init
 ```
 
- - Create table name user
+ - Create table name userfi
  - it will be added on ``'user_table'.py`` in migrations/versions
  - inside of the file, two function will be made; upgrade, downgrade
 
@@ -82,4 +82,3 @@ how to test with Python cell
 # terminal
 ✗ flask db upgrade
 ```
- 
