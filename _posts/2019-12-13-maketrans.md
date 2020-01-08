@@ -1,5 +1,5 @@
 ---
-title: "Python - "
+title: "Python - maketrans"
 date: 2019-12-13
 categories: Python
 ---

@@ -59,6 +59,7 @@ def load_user(id):
 ## 3. routes
 
 - make login and logout function
+- ``current_user, login_user, logout_user`` are given by Flask.
 
 ```Python
 from flask import render_template, flash, redirect, url_for
