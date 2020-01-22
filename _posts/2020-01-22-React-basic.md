@@ -19,3 +19,8 @@ const root = document.querySelector('#react-root');
 const element = React.createElement("p", {}, "Hello World");
 render(element, root)
 ```
+
+
+<br>
+
+##### 2.
