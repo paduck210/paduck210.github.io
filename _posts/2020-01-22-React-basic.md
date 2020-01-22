@@ -3,11 +3,13 @@ title: "React-Basic"
 date: 2020-01-22
 categories: React
 ---
+<br>
 
 ##### 1. Basic Syntax
 
 - React.createElement
 - render(element, root)
+
 
 ```js
 import React from "react";
