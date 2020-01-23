@@ -23,4 +23,21 @@ render(element, root)
 
 <br>
 
-##### 2.
+##### 2.`props` - Unchange
+```js
+import React from 'react';
+
+const Article = (props) => {
+  return (
+    <div className="article">
+      <h2>{props.title}</h2>
+      <p>{props.body}</p>
+    </div>
+  );
+};
+
+export default Article;
+
+```
+<br>
+##### 3. `` - Changeable
