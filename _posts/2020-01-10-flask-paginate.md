@@ -55,9 +55,3 @@ Now, it's working with this
 
 
 <br>
-
-#### 3. Pagination Navigator
-```python
-
-
-```

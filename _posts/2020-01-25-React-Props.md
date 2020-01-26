@@ -8,7 +8,7 @@ categories: React
 - Learn how to use Props in various ways.
 - Learn use two API; Faker, Semantic UI
 - Make props component when it need to be reusable
-- Can call whole componet itself with <b> {props.children}</b>
+- Can call whole component itself with <b> {props.children}</b>
 
 
 #### `index.js`
