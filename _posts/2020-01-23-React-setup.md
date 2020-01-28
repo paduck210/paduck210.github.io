@@ -74,7 +74,9 @@ $ npx install-peerdeps --dev eslint-config-airbnb
 <br>
 
 
+
 3. `.prettierrc`
+
 ```js
 프로젝트의 루트 디렉토리에 .prettierrc 라는 파일을 다음과 같이 생성하세요:
 
