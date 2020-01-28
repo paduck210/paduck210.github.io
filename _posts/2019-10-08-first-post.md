@@ -1,7 +1,7 @@
 ---
 title: "Ruby - Basic"
 date: 2019-10-08
-categories: Lewagon
+categories: Ruby
 ---
 
 

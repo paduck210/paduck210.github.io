@@ -1,4 +1,3 @@
-
 ---
 title: "Flask - Routes dynamic component"
 date: 2020-01-07

@@ -1,10 +1,10 @@
 ---
 title: "React-Props"
-date: 2020-01-25
+date: 2020-01-27
 categories: React
 ---
 
- 
+
 
 ```js
 const SeasonDisplay = props => {

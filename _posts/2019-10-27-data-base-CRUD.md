@@ -1,7 +1,7 @@
 ---
 title: "DB BASE - CRUE"
 date: 2019-10-27
-categories: Lewagon
+categories: Ruby
 ---
 
 1. CRUE

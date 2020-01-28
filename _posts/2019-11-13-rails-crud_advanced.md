@@ -1,7 +1,7 @@
 ---
 title: "Rails CRUD Advanced"
 date: 2019-11-13
-categories: Lewagon
+categories: Ruby
 ---
 
 

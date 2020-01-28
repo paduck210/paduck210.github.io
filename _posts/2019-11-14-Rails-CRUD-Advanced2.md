@@ -1,7 +1,7 @@
 ---
 title: "Ruby - CRUD-Advanced2"
 date: 2019-11-17
-categories: Lewagon
+categories: Ruby
 ---
 
 1. link to with Bootstrap
