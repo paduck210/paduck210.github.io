@@ -5,8 +5,6 @@ Development stduying Blog :D
 [Blog URL](https://paduck210.github.io/)
 
 
-<br>
-
 ---
 Study list with fun
 
