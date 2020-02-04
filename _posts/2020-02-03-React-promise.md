@@ -32,7 +32,8 @@ class App extends React.Component {
 
 
 ```js
-class App extends React.Component {
+//class App extends React.Component
+{
   async onSearchSubmit(term) {
     const response = await axios.get('https://api.unsplash.com/search/photos', {
       params: { query: term },
@@ -41,4 +42,25 @@ class App extends React.Component {
 
     console.log(response.data.results);
   }
+```
+
+
+
+-----
+
+#### In case of `arrow function` with `sync`
+
+- Change method to arrow function, and put `async` infront of parameter
+
+```js
+//class App extends React.Component {
+//  state = { images: [] };
+{
+  onSearchSubmit = async term => {
+    const response = await axios.get('https://api.unsplash.com/search/photos', {
+      params: { query: term },
+      headers: { Authorization: process.env.REACT_APP_UNSPLASH_ID },
+    });
+    this.setState({ images: response.data.results });
+  };
 ```
