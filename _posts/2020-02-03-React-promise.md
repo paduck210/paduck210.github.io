@@ -1,5 +1,5 @@
 ---
-title: React-Promise
+title: React- Promise: async, await, then
 date: 2020-02-03
 categories: React
 ---
