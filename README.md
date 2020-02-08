@@ -1,6 +1,16 @@
-# paduck210.github.io
+## `paduck210.github.io`
 
-Jung Yu Blog
+Development stduying Blog :D
 
-- Ruby and Rails learned by Coding Bootcamp (Thanks LeWagon)
-- Python learned by Python Crash Course
+[Blog URL](https://paduck210.github.io/)
+
+<br>
+
+Study list with fun
+
+- Ruby on Rails
+- Python 
+- Flask
+- Javascript
+- React
+- Git 
