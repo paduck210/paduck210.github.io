@@ -6,13 +6,16 @@ body,
 .messageBox,
 .room {
   width: 100vw;
-  height: 90vh;
+  height: 100vh;
   max-width: 500px;
   max-height: 900px;
   margin: auto;
   padding: 0;
 }
 
+.disable-dbl-tap-zoom {
+  touch-action: manipulation;
+}
 .container {
   text-align: center;
   background-color: darkblue;
@@ -206,9 +209,10 @@ template {
   justify-content: center;
   height: 100%;
   width: 100vw;
+  max-width: 500px;
   background-image: url("./photo.jpg");
   background-repeat: no-repeat;
-  background-size: contain;
+  background-size: cover;
   margin: 0 auto;
   overflow: hidden;
   position: absolute;
