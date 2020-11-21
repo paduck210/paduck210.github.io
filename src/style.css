@@ -37,17 +37,19 @@ body,
 
 h1 {
   font-family: "VT323", monospace;
-  font-size: 4.7em;
+  font-size: 4rem;
   font-weight: 700;
   color: white;
   font-style: italic;
   margin: 0;
   text-shadow: 5px 3px hotpink;
+  width: 100%;
+  line-height: 105%;
 }
 h4,
 p {
   font-family: "VT323", monospace;
-  font-size: 2rem;
+  font-size: 1.5rem;
   font-weight: 300;
   color: white;
   padding: 0;
@@ -62,10 +64,6 @@ p {
 }
 
 .textContainer {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-around;
   padding-top: 3rem;
 }
 
@@ -119,7 +117,7 @@ input[type="range"]::-webkit-slider-thumb {
 }
 .btn {
   font-family: "VT323", monospace;
-  margin-top: 2.5rem;
+  margin-top: 2rem;
   padding: 0.5rem 2rem;
   font-size: 2rem;
 }
