@@ -1,3 +1,5 @@
+import { showPhoto } from "./showPhoto.js";
+
 const showMesseage = () => {
   // array with texts to type in typewriter
   var dataText = [
@@ -35,6 +37,7 @@ const showMesseage = () => {
     else if (typeof fnCallback == "function") {
       // call callback after timeout
       setTimeout(fnCallback, 700);
+      showPhoto();
     }
   }
   // start a typewriter animation for a text in the dataText array

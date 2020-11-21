@@ -1,6 +1,6 @@
 import { showMesseage } from "./showMesseage.mjs";
 
-let randomNumber = 1000;
+let randomNumber = 1121;
 const guesses = document.querySelector(".guesses");
 const scoreContainer = document.querySelector(".score");
 const score = document.querySelector(".score span");
@@ -12,7 +12,7 @@ let guessCount = 1;
 document.querySelector(".container").setAttribute("draggable", false);
 
 const checkGuess = () => {
-  let userGuess = Number(number.innerText);
+  let userGuess = Number(number.value);
   guessContainer.style.display = "block";
   guesses.innerHTML += userGuess + " ";
   scoreContainer.style.display = "block";

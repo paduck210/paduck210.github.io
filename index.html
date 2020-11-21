@@ -16,18 +16,38 @@
       href="https://fonts.googleapis.com/css2?family=Chivo:ital,wght@0,400;0,700;0,900;1,400;1,700;1,900&display=swap"
       rel="stylesheet"
     />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=VT323&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
     <div class="container">
-      <div class="inputContainer">
+      <div class="textContainer">
         <h1>GENIUS TEST</h1>
-        <h4 style="padding-top: 1rem">
-          Input number between 500~1500 😎 <br />Try to drag bleow green circle
-          🟢
-        </h4>
+        <h4>Input number between <br />500~1500 😎 <br /></h4>
       </div>
-      <div class="value number">1000</div>
-      <input type="range" min="500" max="1500" step="1" value="1000" />
+      <div class="numberInput">
+        <div class="number-input">
+          <button
+            onclick="this.parentNode.querySelector('input[type=number]').stepDown()"
+          ></button>
+          <input
+            class="quantity value number"
+            min="500"
+            max="1500"
+            name="quantity"
+            value="1000"
+            type="number"
+          />
+          <button
+            onclick="this.parentNode.querySelector('input[type=number]').stepUp()"
+            class="plus"
+          ></button>
+        </div>
+      </div>
+
       <button class="guessSubmit btn btn-success btn-lg">Submit guess</button>
       <div class="guessContainer">
         <p class="result alert"></p>
@@ -36,7 +56,6 @@
       </div>
     </div>
     <script type="module" src="src/index.js"></script>
-    <script src="src/showNumber.js"></script>
     <script
       src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
       integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
