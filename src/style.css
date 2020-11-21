@@ -2,13 +2,16 @@ html {
   font-family: "VT323", monospace;
 }
 
-body .messageBox {
+body,
+.messageBox,
+.room {
   width: 100vw;
-  height: 100vh;
+  height: 90vh;
   max-width: 500px;
   max-height: 900px;
   margin: auto;
   padding: 0;
+  margin-top: 2rem;
 }
 
 .container {
@@ -115,6 +118,7 @@ input[type="range"]::-webkit-slider-thumb {
   height: 98vh;
   color: white;
   word-break: break-word;
+  margin-top: 6rem;
 }
 
 .messageBox h2 {
@@ -202,14 +206,13 @@ template {
   flex-wrap: wrap;
   justify-content: center;
   height: 100%;
-  width: 100%;
+  width: 100vw;
   background-image: url("./photo.jpg");
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: contain;
   margin: 0 auto;
   overflow: hidden;
-
-  position: relative;
+  position: absolute;
   cursor: url("data:image/svg+xml,%3C%3Fxml version='1.0' encoding='iso-8859-1'%3F%3E%3Csvg version='1.1' id='Capa_1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' x='0px' y='0px'  width='36px' height='36px' viewBox='0 0 58 58' style='enable-background:new 0 0 58 58;' xml:space='preserve' transform='rotate(30)'%3E%3Cline stroke='%23888888' stroke-width='4px' stroke-linecap='round' stroke-miterlimit='10' x1='29' y1='18' x2='29' y2='57'/%3E%3Ccircle fill='%23DD352E' cx='29' cy='14' r='10'/%3E%3C/svg%3E%0A"),
     move;
 }

@@ -1,4 +1,4 @@
-import { showMesseage } from "./showMesseage.mjs";
+import { showMesseage } from "./showMesseage.js";
 
 let randomNumber = 1121;
 const guesses = document.querySelector(".guesses");
