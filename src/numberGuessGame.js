@@ -43,32 +43,42 @@ const checkGuess = () => {
       result.textContent = "Oh, it's still a bit High! 😳";
       result.className = "result alert alert-secondary";
       break;
+    case userGuess - randomNumber > 15:
+      result.textContent = "Get closer! Still High! 🤓";
+      result.className = "result alert alert-secondary";
+      break;
     case userGuess - randomNumber > 5:
-      result.textContent = "Close! Still little High! 😘";
+      result.textContent = "Holay! Just little High! 🥳";
       result.className = "result alert alert-warning";
       break;
     case userGuess - randomNumber >= 1:
-      result.textContent = "Almooooost, bit bit High😜";
+      result.textContent = "Almooooost, tiny High 😜";
       result.className = "result alert alert-success";
       break;
-    case userGuess - randomNumber < 80:
+
+    // 1100 - 1121 = -21
+    case userGuess - randomNumber < -80:
       result.textContent = "Gosh, it's TOOOOO Low! 😨";
       result.className = "result alert alert-danger";
       break;
-    case userGuess - randomNumber < 50:
-      result.textContent = "Still, it's too Low 🤤";
+    case userGuess - randomNumber < -50:
+      result.textContent = "Still, it's TOO Low 🤤";
       result.className = "result alert alert-danger";
       break;
-    case userGuess - randomNumber < 25:
+    case userGuess - randomNumber < -25:
       result.textContent = "Oh, it's still a bit Low! 😭";
       result.className = "result alert alert-secondary";
       break;
-    case userGuess - randomNumber < 15:
-      result.textContent = "Close! Still little Low! 🤓";
+    case userGuess - randomNumber < -15:
+      result.textContent = "Get closer! Still Low! 🤓";
       result.className = "result alert alert-warning";
       break;
-    case userGuess - randomNumber <= 1:
-      result.textContent = "Almooooost, bit bit Low 😎";
+    case userGuess - randomNumber < -5:
+      result.textContent = "Holay! Just little Low! 🥳";
+      result.className = "result alert alert-warning";
+      break;
+    case userGuess - randomNumber <= -1:
+      result.textContent = "Almooooost, tiny Low 😎";
       result.className = "result alert alert-success";
       break;
     default:
