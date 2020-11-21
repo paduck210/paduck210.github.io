@@ -1,6 +1,6 @@
 import { showPhoto } from "./showPhoto.js";
 
-const showMesseage = () => {
+export const showMesseage = () => {
   // array with texts to type in typewriter
   var dataText = [
     "👏👏👏👏👏",
@@ -16,6 +16,7 @@ const showMesseage = () => {
     "YOUR 38TH BIRTDAY 🎉🎉🎉",
     "HAHAHA I'M KIDDING 🤪",
     "HOPE YOU HAVE A GREAT DAY 🥰",
+    "",
   ];
   document.querySelector("body").innerHTML =
     "<div class='messageBox'><h2></h2></div>";
@@ -37,15 +38,18 @@ const showMesseage = () => {
     else if (typeof fnCallback == "function") {
       // call callback after timeout
       setTimeout(fnCallback, 700);
-      showPhoto();
     }
   }
+
   // start a typewriter animation for a text in the dataText array
   function StartTextAnimation(i) {
     if (typeof dataText[i] == "undefined") {
       setTimeout(function () {
         StartTextAnimation(0);
       }, 20000);
+    }
+    if (dataText[i] == "") {
+      showPhoto();
     }
     // check if dataText[i] exists
     if (i < dataText[i].length) {
@@ -59,4 +63,3 @@ const showMesseage = () => {
   // start the text animation
   StartTextAnimation(0);
 };
-export { showMesseage };
