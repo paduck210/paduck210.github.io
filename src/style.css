@@ -11,6 +11,7 @@ body,
   max-height: 900px;
   margin: auto;
   padding: 0;
+  overflow: hidden;
 }
 
 .disable-dbl-tap-zoom {
