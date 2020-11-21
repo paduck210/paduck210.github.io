@@ -1,12 +1,19 @@
 html {
   font-family: "VT323", monospace;
+  height: 100%;
+}
+
+#root {
+  position: fixed;
+  width: 100%;
+  height: 100%;
 }
 
 body,
 .messageBox,
 .room {
   width: 100vw;
-  height: 100vh;
+  height: 100%;
   max-width: 500px;
   max-height: 900px;
   margin: auto;
@@ -35,7 +42,7 @@ h1 {
   color: white;
   font-style: italic;
   margin: 0;
-  text-shadow: 5px 0px green;
+  text-shadow: 5px 3px hotpink;
 }
 h4,
 p {
@@ -45,6 +52,7 @@ p {
   color: white;
   padding: 0;
   margin: 0;
+  line-height: 105%;
 }
 
 .resultParas {
@@ -92,11 +100,11 @@ input[type="range"]::-webkit-slider-thumb {
 }
 
 .guessContainer {
-  margin: 2.5rem auto;
+  margin: 2rem auto;
   display: none;
 }
 .guessContainer p {
-  margin: 2rem 0;
+  margin: 1rem 0;
   border-radius: 0;
 }
 
@@ -114,6 +122,10 @@ input[type="range"]::-webkit-slider-thumb {
   margin-top: 2.5rem;
   padding: 0.5rem 2rem;
   font-size: 2rem;
+}
+.btn-success {
+  background-color: hotpink;
+  border: hotpink;
 }
 
 .messageBox {
