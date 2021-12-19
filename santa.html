@@ -2,7 +2,7 @@
 <html>
   <head>
     <meta charset="utf-8" />
-    <meta property="og:image" content="./santaRun/assets/thumbnail.jpg" />
+    <meta property="og:image" content="./santaRun/assets/thumbnail2.jpg" />
     <meta property="og:title" content="손가락 산타런🎅🎄" />
     <meta
       property="og:description"
@@ -72,6 +72,7 @@
         flex-direction: column;
         align-items: center;
         width: 80%;
+        min-width: 320px;
         max-width: 600px;
       "
     >
@@ -117,9 +118,26 @@
           font-size: 25px;
           font-weight: 200;
           color: #9e9e9e;
+          flex-direction: column;
         "
       >
-        <h1 style="font-size: 28px">여기를 터치!</h1>
+        <h2 style="font-size: 28px; margin: 0">화면을 누르면 점프!</h2>
+        <h2 style="font-size: 18px; margin: 0">
+          Game over시 클릭
+          <div
+            style="
+              background-image: url('./santaRun/assets/icon.png');
+              width: 25px;
+              height: 25px;
+              background-repeat: no-repeat;
+              background-size: cover;
+              position: relative;
+              float: right;
+              margin-left: 4px;
+            "
+            ;
+          ></div>
+        </h2>
       </div>
       <div class="desktop-click-btn btn" style="">
         <h2 style="font-size: 28px; color: #818181" ;>스페이스바를 클릭!</h2>
